@@ -1,0 +1,19 @@
+.react-multi-carousel-dot-list {
+     display: none !important;
+}
+
+.gallery-custom-dot-list-style .react-multiple-carousel__arrow--left {
+     display: none;
+}
+
+.gallery-custom-dot-list-style .react-multiple-carousel__arrow--left {
+     display: none;
+}
+
+/* .react-multiple-carousel__arrow--right {
+     right: calc(10% + 1px) !important;
+} */
+.tutor-w-h {
+     height: 60% !important;
+     border: 2px solid green;
+}

@@ -1,0 +1,18 @@
+House of Prophet
+Home page (done)
+About page (done)
+Gallery page (done)
+Facilitator page (done)
+Blog page (done)
+Ministry page ()
+Contact page (done)
+
+
+We need to work on all italized fonts on the footer and semi header fonts (done)
+We need to work on our images, as some of them have been stretched (done)
+Testimonial animation ()
+
+Gotham font fixed (done)
+animate on scroll ()
+lazy image loading()
+home page gallery section not showing image on phone device()
