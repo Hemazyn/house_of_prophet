@@ -8,6 +8,7 @@ export { default as Gallery } from "./Gallery";
 export { default as SocialLink } from "./SocialLink";
 export { default as Logo } from "./Logo";
 export { default as Loader } from "./Loader";
+export { default as Loading } from "./Loading";
 export { default as ScrollTop } from "./ScrollTop";
 export { default as ShortFooter } from "./ShortFooter";
 export { default as SignIn } from "./SignIn";

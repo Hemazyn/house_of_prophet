@@ -5,7 +5,6 @@ import { BsListNested, BsX } from "react-icons/bs";
 const Navbar = () => {
      const [nav, setNav] = useState(false);
 
-     // Function to close the navigation on large screens
      const closeNavOnLargeScreen = () => {
           if (window.innerWidth >= 768) {
                setNav(false);
