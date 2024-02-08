@@ -4,9 +4,15 @@ import { BsListNested, BsX } from "react-icons/bs";
 
 const Navbar = () => {
      const [nav, setNav] = useState(false);
+
+     // Function to close the navigation on large screens
+     const closeNavOnLargeScreen = () => {
+          if (window.innerWidth >= 768) {
+               setNav(false);
+          }
+     };
      return (
           <>
-               {/* <div className={`w-full flex justify-between items-center px-[5%] py-2 md:py-3 transition-all text-white font-bold bg-opacity-60 backdrop-filter backdrop-blur-lg ${scrolling ? "bg-transparent text-white bg-opacity-60 backdrop-filter backdrop-blur-2xl border-b" : ""} fixed top-0 z-50`}> */}
                <div className="w-full flex justify-between items-center px-[5%] py-2 md:py-3 text-neutral-900 bg-indigo-200">
                     <div className=" lg:block">
                          <div className="flex items-center gap-x-2">
@@ -16,22 +22,22 @@ const Navbar = () => {
                     </div>
                     <ul className="hidden md:flex lg:flex justify-between">
                          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#5927cd] hover:underline duration-200">
-                              <Link to="/" onClick={() => setNav(!nav)} smooth="true" duration={500}>Home</Link>
+                              <Link to="/" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Home</Link>
                          </li>
                          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-                              <Link to="/about" onClick={() => setNav(!nav)} smooth="true" duration={500}>About Us</Link>
+                              <Link to="/about" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>About Us</Link>
                          </li>
                          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-                              <Link to="/blog" onClick={() => setNav(!nav)} smooth="true" duration={500}>Blog</Link>
+                              <Link to="/blog" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Blog</Link>
                          </li>
                          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-                              <Link to="/gallery" onClick={() => setNav(!nav)} smooth="true" duration={500}>Gallery</Link>
+                              <Link to="/gallery" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Gallery</Link>
                          </li>
                          <li className="hidden lg:flex md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-                              <Link to="/contact" onClick={() => setNav(!nav)} smooth="true" duration={500}>Contact Us</Link>
+                              <Link to="/contact" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Contact Us</Link>
                          </li>
                          <li className="hidden lg:flex md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-                              <Link to="/facilitators" onClick={() => setNav(!nav)} smooth="true" duration={500}>Our Facilitator</Link>
+                              <Link to="/facilitators" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Our Facilitator</Link>
                          </li>
                     </ul>
                     <button className="hidden md:block justify-center items-center bg-[#272fcd] rounded-[5px] text-white py-2 px-5 font-roboto">
