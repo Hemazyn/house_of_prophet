@@ -113,16 +113,18 @@ const Appointment = () => {
                                    <div className="flex flex-col gap-1 w-fit">
                                         <label className="okay text-black font-roboto font-normal">Choose meeting time</label>
                                         <input type="date" name="date" required autoComplete="none"
-                                             className="bg-indigo-200 font-roboto font-normal rounded-[4px] placeholder:text-xs px-2 py-2 uppercase"
+                                             className="bg-indigo-200 text-black font-roboto font-normal rounded-[4px] placeholder:text-xs px-2 py-2 uppercase"
                                              onInvalid={(e) => e.target.setCustomValidity('Please choose a meeting date')}
                                              onInput={(e) => e.target.setCustomValidity('')} />
                                    </div>
 
-                                   <div className={isOpen ? "dropdown active" : "flex flex-col font-roboto font-normal dropdown rounded-[4px] outline-none border-none text-[#0e1487] bg-indigo-200"} onClick={handleClick}>
-                                        <div className="dropdown__text" name="facilitator"> {!haveText ? "Facilitator" : haveText}</div>
+                                   <div className={isOpen ? "dropdown active" : "flex flex-col font-roboto font-normal dropdown gap5 rounded-[4px] outline-none border-none text-[#0e1487] bg-indigo-200"} onClick={handleClick}>
+                                        <div className="dropdown__text flex items-center" name="facilitator">
+                                             {!haveText ? "Facilitator" : haveText}
+                                             <i className="icon"></i>
+                                        </div>
                                         {itemList()}
                                    </div>
-                                   {/* <input type="hidden" name="facilitator" ref={(el) => form.current.facilitator = el} /> */}
                               </div>
 
                               {/* section 2 */}
