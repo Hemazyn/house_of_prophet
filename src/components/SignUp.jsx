@@ -1,10 +1,10 @@
 import { useState } from 'react';
-// import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2';
 import { Header } from '../components/index';
 import { GoEye, GoEyeClosed } from "react-icons/go";
 import google from "../assets/google.svg";
 import { Link } from 'react-router-dom';
+import { auth } from '../firebase/config';
 
 const SignUp = () => {
      const [PhoneNumber, setPhoneNumber] = useState("");
@@ -14,6 +14,9 @@ const SignUp = () => {
      const [showPassword, setShowPassword] = useState(false); //password
      const [showConfirmPassword, setShowConfirmPassword] = useState(false);
      const [passwordsMatch, setPasswordsMatch] = useState(true);
+
+     console.log(auth);
+
      // phone validation
      const handleChange = (value) => {
           setPhoneNumber(value);
