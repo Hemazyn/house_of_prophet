@@ -58,7 +58,7 @@ const Navbar = () => {
                                    <Link to="/blog" onClick={() => setNav(!nav)} smooth="true" duration={500}>Blog</Link>
                               </li>
                               <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-                                   <Link to="gallery" onClick={() => setNav(!nav)} smooth="true" duration={500}>Gallery</Link>
+                                   <Link to="/gallery" onClick={() => setNav(!nav)} smooth="true" duration={500}>Gallery</Link>
                               </li>
                               <li className="px-4 py-2 capitalize text-sm cursor-pointer">
                                    <Link to="/contact" onClick={() => setNav(!nav)} smooth="true" duration={500}>Contact Us</Link>

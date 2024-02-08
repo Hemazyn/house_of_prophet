@@ -8,7 +8,7 @@ const AboutPage = () => {
      useEffect(() => {
           const fetchData = async () => {
                try {
-                    await new Promise(resolve => setTimeout(resolve, 3000));
+                    await new Promise(resolve => setTimeout(resolve, 2000));
                     setLoading(false);
                } catch (error) {
                     console.error('Error:', error);

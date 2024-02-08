@@ -58,7 +58,6 @@ const Appointment = () => {
           }
           return true;
      };
-
      const sendEmail = (e) => {
           e.preventDefault();
           if (isFormValid()) {
@@ -87,7 +86,6 @@ const Appointment = () => {
                console.log("Form is not valid");
           }
      };
-
      // phone validation
      const handleChange = (value) => {
           setPhoneNumber(value);
@@ -97,11 +95,16 @@ const Appointment = () => {
           const phoneNumberPattern = /^\d{1,15}$/;
           return phoneNumberPattern.test(phoneNumber);
      }
+
+     useEffect(() => {
+          window.scrollTo(0, 0);
+     }, []);
+
      return (
           <>
                <Header />
                <div className="w-full md:h-[800px] flex justify-center items-center bg-gray-300">
-                    <div className="w-full md:w-3/5 mx-auto flex flex-col shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-3xl p-3 md:p-5" style={{ border: "2px solid re" }}>
+                    <div id="appoint" className="w-full md:w-3/5 mx-auto flex flex-col shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-3xl p-3 md:p-5" style={{ border: "2px solid re" }}>
                          <h2 className="text-center font-roboto font-semibold text-black text-lg p-5">BOOK AN APPOINTMENT</h2>
                          <form ref={form} onSubmit={sendEmail}>
 
