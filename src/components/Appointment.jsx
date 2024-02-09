@@ -2,7 +2,7 @@
 import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2';
-import { Footer, Header } from '.';
+import { Footer, Header } from "../components";
 
 const facilitator = [
      "Bro Pelumi",

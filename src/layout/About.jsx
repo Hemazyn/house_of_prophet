@@ -58,7 +58,7 @@ const AboutPage = () => {
                          <ScrollTop />
                          <ShortFooter />
                     </>
-               )};
+               )}
           </>
      );
 }

@@ -12,7 +12,7 @@ const Loading = () => {
                     wrapperClass="vortex-wrapper"
                     colors={['red', 'green', 'blue', 'yellow', 'orange', 'purple']}
                />
-          </div >
+          </div>
      );
 };
 

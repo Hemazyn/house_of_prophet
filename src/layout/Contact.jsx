@@ -145,7 +145,7 @@ const Contact = () => {
                          <Footer />
                          <ScrollTop />
                     </>
-               )};
+               )}
           </>
      );
 }

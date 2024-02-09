@@ -133,7 +133,7 @@ const Blogs = () => {
                          <Footer />
                          <ScrollTop />
                     </>
-               )};
+               )}
           </>
      );
 }

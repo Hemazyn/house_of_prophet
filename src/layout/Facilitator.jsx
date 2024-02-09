@@ -62,7 +62,7 @@ const Facilitator = () => {
                          <Footer />
                          <ScrollTop />
                     </>
-               )};
+               )}
           </>
      );
 }
