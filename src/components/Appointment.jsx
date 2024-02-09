@@ -113,7 +113,7 @@ const Appointment = () => {
                                    <div className="flex flex-col gap-1 w-fit">
                                         <label className="okay text-black font-roboto font-normal">Choose meeting time</label>
                                         <input type="date" name="date" required autoComplete="none"
-                                             className="bg-indigo-200 text-black placeholder:text-red-600 font-roboto font-normal rounded-[4px] placeholder:text-xs px-2 py-2 uppercase"
+                                             className="bg-indigo-200 text-black rounded-[4px] placeholder:text-xs px-2 py-2 uppercase"
                                              onInvalid={(e) => e.target.setCustomValidity('Please choose a meeting date')}
                                              onInput={(e) => e.target.setCustomValidity('')} />
                                    </div>
