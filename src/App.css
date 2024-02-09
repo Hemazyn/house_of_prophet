@@ -119,8 +119,7 @@
 
 /* section contact form, phone input style */
 input[type="date"] {
-  color: green;
-  font-weight: bold;
+  color: red !important; 
 }
 .react-tel-input .form-control {
   width: 100% !important;
