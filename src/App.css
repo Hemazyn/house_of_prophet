@@ -118,6 +118,10 @@
 }
 
 /* section contact form, phone input style */
+input[type="date"] {
+  color: green;
+  font-weight: bold;
+}
 .react-tel-input .form-control {
   width: 100% !important;
   background: transparent !important;
