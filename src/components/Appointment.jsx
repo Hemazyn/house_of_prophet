@@ -3,6 +3,9 @@ import { useState, useRef, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import PhoneInput from 'react-phone-input-2';
 import { Footer, Header } from "../components";
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+
 
 const facilitator = [
      "Bro Pelumi",
@@ -23,6 +26,7 @@ const Appointment = () => {
      const [haveText, setHaveText] = useState("");
      const [selectedFacilitator, setSelectedFacilitator] = useState("");
      const [PhoneNumber, setPhoneNumber] = useState("");
+     const [startDate, setStartDate] = useState(null);
 
      const handleClick = () => {
           setIsOpen(!isOpen);
@@ -99,6 +103,10 @@ const Appointment = () => {
      useEffect(() => {
           window.scrollTo(0, 0);
      }, []);
+     // datePicker
+     useEffect(() => {
+          setStartDate(null);
+     }, []);
 
      return (
           <>
@@ -112,10 +120,22 @@ const Appointment = () => {
                               <div className="flex flex-row justify-between items-end mb-2">
                                    <div className="flex flex-col gap-1 w-fit">
                                         <label className="okay text-black font-roboto font-normal">Choose meeting time</label>
-                                        <input type="date" name="date" required
+                                        {/* <input type="date" name="date" required
                                              className="bg-indigo-200 text-black rounded-[4px] placeholder:textxs px-2 py-2 uppercase font-normal"
                                              onInvalid={(e) => e.target.setCustomValidity('Please choose a meeting date')}
                                              onInput={(e) => e.target.setCustomValidity('')} style={{ border: "2px solid red" }}
+                                        /> */}
+                                        <DatePicker
+                                             selected={startDate}
+                                             onChange={(date) => setStartDate(date)}
+                                             dateFormat="yyyy-MM-dd"
+                                             name="date"
+                                             required
+                                             placeholder="select a date"
+                                             className="bg-indigo-200 text-black rounded-[4px] placeholder:text-xs px-2 py-2 uppercase font-normal w-fit"
+                                             onInvalid={(e) => e.target.setCustomValidity('Please choose a meeting date')}
+                                             onInput={(e) => e.target.setCustomValidity('')}
+                                             style={{ border: "2px solid red" }}
                                         />
                                    </div>
 

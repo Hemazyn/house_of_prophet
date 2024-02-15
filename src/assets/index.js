@@ -1,4 +1,4 @@
-import aboutBg from "../assets/about.avif"
+import aboutBg from "../assets/about.webp"
 import aboutInfo from "../assets//about-info.webp"
 import bible from "../assets/bible.webp";
 import blogbg from "../assets/blogbg.webp";
