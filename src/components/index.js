@@ -17,4 +17,3 @@ export { default as Slide } from "./Slide";
 export { default as Testimony } from "./Testimony";
 export { default as Tutors } from "./Tutors";
 export { default as NewsLetter } from "./NewsLetter";
-

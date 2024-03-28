@@ -1,5 +1,5 @@
-import aboutBg from "../assets/about.webp"
-import aboutInfo from "../assets//about-info.webp"
+import aboutBg from "../assets/about.webp";
+import aboutInfo from "../assets//about-info.webp";
 import bible from "../assets/bible.webp";
 import blogbg from "../assets/blogbg.webp";
 import facilitatorBg from "../assets/facilitatorBg.webp";
@@ -33,11 +33,37 @@ import moodofworship3 from "../assets/moodofworship3.webp";
 import meditating from "../assets/meditating.webp";
 
 export {
-     aboutBg, aboutInfo, bible, blogbg, facilitatorBg, facilitatorBg1, galleryBg, groupFellowship,
-     groupFellowship2, happy, menpraying, moodofworship,
-     person, person1, person2, person3, person4, phonepics, praying,
-     praying2, praying3, praying4, praying5,
-     sermon, speech, studying, tears, tools, written,
-     moodofworship1, moodofworship2, moodofworship3,
-     meditating
+  aboutBg,
+  aboutInfo,
+  bible,
+  blogbg,
+  facilitatorBg,
+  facilitatorBg1,
+  galleryBg,
+  groupFellowship,
+  groupFellowship2,
+  happy,
+  menpraying,
+  moodofworship,
+  person,
+  person1,
+  person2,
+  person3,
+  person4,
+  phonepics,
+  praying,
+  praying2,
+  praying3,
+  praying4,
+  praying5,
+  sermon,
+  speech,
+  studying,
+  tears,
+  tools,
+  written,
+  moodofworship1,
+  moodofworship2,
+  moodofworship3,
+  meditating,
 };
