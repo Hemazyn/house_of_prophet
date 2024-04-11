@@ -25,7 +25,7 @@ const Hero = () => {
         </div>
         <div className="absoluteProp w-4/5 mx-auto h-fit flex flex-col items-center justify-center py-5 md:py-10 lg:py-20 px-4 gap-5 text-white bg-opacity-60 backdrop-filter backdrop-blur-md">
           <h3 className="text-2xl lg:text-6xl font-Gotham-Bold">{carousel[currentIndex].head}</h3>
-          <p className="font-Gotham-Bold text-sm lg:text-2xl flex items-end">{carousel[currentIndex].text}</p>
+          <p className="font-Gotham-Medium text-[#d3d1d1] text-sm lg:text-2xl flex items-end">{carousel[currentIndex].text}</p>
         </div>
 
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-2 md:left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
