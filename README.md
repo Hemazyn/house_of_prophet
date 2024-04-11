@@ -38,13 +38,13 @@ Our vision is to raise a complete Army, spiritually adept and proficient in dive
 
 To get a local copy up and running, follow these simple steps:
 
-- Clone the repository from GitHub.
-- Install dependencies using npm or yarn.
-- Start the development server.
-- Explore the House of Prophets platform locally.
+1. Clone the repository from GitHub.
+2. Install dependencies using npm or yarn.
+3. Start the development server.
+4. Explore the House of Prophets platform locally.
 
 ### Contribution
 
 Contributions are welcome! Feel free to submit bug reports, feature requests, or even pull requests to help improve the House of Prophets platform. Please adhere to our code of conduct and contribution guidelines.
 
-- - Inspired by the divine, driven by purpose.
+_Inspired by the divine, driven by purpose._
