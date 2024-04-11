@@ -54,28 +54,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          {/* <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#5927cd] hover:underline duration-200">
-            <Link to="/" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Home</Link>
-          </li>
-          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-            <Link to="/about" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>About Us</Link>
-          </li>
-          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-            <Link to="/blog" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Blog</Link>
-          </li>
-          <li className="md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-            <Link to="/gallery" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Gallery</Link>
-          </li>
-          <li className="hidden lg:flex md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-            <Link to="/contact" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Contact Us</Link>
-          </li>
-          <li className="hidden lg:flex md:px-3 lg:px-4 text-sm md:text-base cursor-pointer capitalize font-roboto font-medium hover:text-[#272fcd] hover:underline duration-200">
-            <Link to="/facilitators" onClick={() => { setNav(!nav); closeNavOnLargeScreen() }} smooth="true" duration={500}>Our Facilitator</Link>
-          </li> */}
         </ul>
-        <button className="hidden md:block justify-center items-center bg-[#272fcd] rounded-[5px] text-white py-2 px-5 font-roboto">
-          <Link to="/signUp">Become a member</Link>
-        </button>
         <div onClick={() => setNav(!nav)} className="cursor-pointer z-50 md:hidden">
           {nav ? (
             <BsX size={25} className="font-bold text-black" style={{ fontWeight: "lighter" }} />
@@ -85,27 +64,13 @@ const Navbar = () => {
         {/* navbar toggle phone view */}
         {nav && (
           <ul className="flex flex-col justify-start items-start absolute top-0 right-0 w-2/4 h-fit py-4 text-neutral-900 font-roboto bg-[#c5cbfd] z-40">
-            <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-              <Link to="/" onClick={() => setNav(!nav)} smooth="true" duration={500}>Home</Link>
-            </li>
-            <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-              <Link to="/about" onClick={() => setNav(!nav)} smooth="true" duration={500}>About Us</Link>
-            </li>
-            <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-              <Link to="/blog" onClick={() => setNav(!nav)} smooth="true" duration={500}>Blog</Link>
-            </li>
-            <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-              <Link to="/gallery" onClick={() => setNav(!nav)} smooth="true" duration={500}>Gallery</Link>
-            </li>
-            <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-              <Link to="/contact" onClick={() => setNav(!nav)} smooth="true" duration={500}>Contact Us</Link>
-            </li>
-            <li className="px-4 py-2 capitalize text-sm cursor-pointer">
-              <Link to="/facilitators" onClick={() => setNav(!nav)} smooth="true" duration={500}>Our Facilitator</Link>
-            </li>
-            <button className="my-2 mx-4 justify-center items-center bg-[#272fcd] text-white text-xs p-[10px] h-[40px] rounded-[5px] font-roboto">
-              <Link to="/signUp">Become a member</Link>
-            </button>
+            {navItems.map((item, index) => (
+              <li key={index} className="px-4 py-2 capitalize text-sm cursor-pointer">
+                <Link to={item.path} onClick={() => setNav(!nav)} smooth="true" duration={500}>
+                  {item.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         )}
       </div>

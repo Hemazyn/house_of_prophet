@@ -105,35 +105,18 @@ const Contact = () => {
                     maecenas pharetra iaculis volutpat tincidunt pretium nisl.{" "}
                   </p>
 
-                  <form
-                    ref={form}
-                    onSubmit={sendEmail}
-                    className="flex flex-col md:flex-row gap-3 text-white z-50"
-                  >
+                  <form ref={form} onSubmit={sendEmail} className="flex flex-col md:flex-row gap-3 text-white z-50">
                     <div className="flex flex-col w-full gap-3">
                       <div className="flex flex-col gap-1">
-                        <label className="okay font-roboto font-normal">
-                          First name
-                        </label>
-                        <input
-                          type="text"
-                          name="first_name"
-                          required
-                          autoComplete="none"
-                          placeholder="Enter first name"
+                        <label className="okay font-roboto font-normal">First name</label>
+                        <input type="text" name="first_name" required
+                          autoComplete="none" placeholder="Enter first name"
                           className="bg-transparent rounded-[4px] border border-white outline-none placeholder:text-xs px-2 py-2"
-                          onInvalid={(e) =>
-                            e.target.setCustomValidity(
-                              "Please input first name here",
-                            )
-                          }
-                          onInput={(e) => e.target.setCustomValidity("")}
-                        />
+                          onInvalid={(e) => e.target.setCustomValidity("Please input first name here",)}
+                          onInput={(e) => e.target.setCustomValidity("")} />
                       </div>
                       <div className="flex flex-col gap-1">
-                        <label className="okay font-roboto font-normal">
-                          Last name
-                        </label>
+                        <label className="okay font-roboto font-normal">Last name</label>
                         <input
                           type="text"
                           name="last_name"
